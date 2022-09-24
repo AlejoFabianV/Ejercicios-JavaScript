@@ -16,7 +16,12 @@ if (metros > 100000) {
 
 // Ejercicio 2
 let numeros = [1 , 20 , 3 , 5 , 1000 , 10];
+let elMayor = 0;
 
 for(let i = 0; i < numeros.length; i++) {
-    console.log("El numero mas grande es " + numeros[4])
+    if (numeros[i] > elMayor) {
+        elMayor = numeros[i]
+    }
 }
+
+console.log(`el mayor de ${numeros} es ${elMayor}`)
